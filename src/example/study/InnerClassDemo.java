@@ -1,25 +1,26 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/26.
+ * 内部类
  */
 
-public class Inner {
+public class InnerClassDemo {
     public static void main(String[] args) {
         OuterClass outerClass = new OuterClass();
         outerClass.print();
-
+        outerClass.print2();
+        
         OuterClass.InnerClass innerClass = outerClass.new InnerClass("成员内部类");
         innerClass.print();
 
         OuterClass.StaticInnerClass staticInnerClass = new OuterClass.StaticInnerClass();
+        staticInnerClass.print();
 
         outerClass.print3();
-
         outerClass.print4(new Child() {
             @Override
             public void desc() {
-
+            	System.out.println("I am a good child!");
             }
         });
     }
@@ -53,7 +54,9 @@ class OuterClass {
     }
     // 静态内部类
     static class StaticInnerClass {
-
+    	public void print() {
+            System.out.println("I am static!");
+        }
     }
 
     public void print3() {
@@ -61,14 +64,14 @@ class OuterClass {
         Child c = new Child() {
             @Override
             public void desc() {
-
+            	System.out.println("I am a child!");
             }
         };
         c.desc();
     }
 
     public void print4(Child c) {
-
+    	c.desc();
     }
 }
 

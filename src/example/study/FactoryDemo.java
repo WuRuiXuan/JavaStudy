@@ -1,19 +1,19 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/26.
+ * 简单工厂模式
  */
 
-public class Factory {
+public class FactoryDemo {
     public static void main(String[] args) {
-        Work work = Factory_Example.getWork("tv");
+        Work work = FactoryExample.getWork("tv");
         if (work != null) {
             work.working();
         }
     }
 }
 
-class Factory_Example {
+class FactoryExample {
     public static Work getWork(String product) {
         if (product.equals("phone")) {
             return new TCLphone();
@@ -33,12 +33,12 @@ interface Work {
 
 class TCLphone implements Work {
     public void working() {
-
+    	System.out.println("TCLphone working!");
     }
 }
 
 class TCLtv implements Work {
     public void working() {
-
+    	System.out.println("TCLtv working!");
     }
 }

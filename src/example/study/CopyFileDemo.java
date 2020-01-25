@@ -9,12 +9,12 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by wuruixuan on 2018/1/18.
+ * 文件复制
  */
 
 public class CopyFileDemo {
     public static void main(String[] args) {
-        copyFile(new File("c:\\1.jpg"), "d:\\");
+        copyFile(new File(System.getProperty("user.dir") + "/DemoImage.jpg"), System.getProperty("user.dir") + "/CopiedImage.jpg");
     }
 
     /**
@@ -25,7 +25,7 @@ public class CopyFileDemo {
     public static void copyFile(File target, String dest) {
         String fileName = target.getName();
         System.out.println(fileName);
-        File destFile = new File(dest + fileName);
+        File destFile = new File(dest);
         try {
             InputStream in = new FileInputStream(target);
             OutputStream out = new FileOutputStream(destFile);

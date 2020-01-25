@@ -1,14 +1,14 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/26.
+ * 静态代理模式
  */
 
-public class Delegate {
+public class DelegateDemo {
     public static void main(String[] args) {
-        Man man = new Man();
-        Woman woman = new Woman();
-        Proxy p = new Proxy(man) {
+        Man person = new Man("小明");
+//        Woman person = new Woman("小红");
+        Proxy p = new Proxy(person) {
             @Override
             public void before() {
                 System.out.println("购物前");
@@ -19,6 +19,7 @@ public class Delegate {
                 System.out.println("购物后");
             }
         };
+        p.shopping();
     }
 }
 
@@ -28,15 +29,21 @@ interface Subject {
 
 class Man implements Subject {
     private String name;
+    public Man(String name) {
+    	this.name = name;
+    }
     public void shopping() {
-        System.out.println();
+        System.out.println("Man: " + name);
     }
 }
 
 class Woman implements Subject {
     private String name;
+    public Woman(String name) {
+		this.name = name;
+	}
     public void shopping() {
-        System.out.println();
+        System.out.println("Woman: " + name);
     }
 }
 
@@ -44,9 +51,11 @@ abstract class Proxy implements Subject {
     public Subject target;
     abstract public void before();
     abstract public void after();
+    
     public Proxy(Subject target) {
         this.target = target;
     }
+    
     public void shopping() {
         before();
         target.shopping();

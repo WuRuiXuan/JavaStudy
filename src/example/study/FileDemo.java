@@ -7,67 +7,72 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * Created by wuruixuan on 2018/1/17.
+ * 文件操作
  */
 
 public class FileDemo {
-    public static void main(String[] args) {
-        File file = new File("c" + File.separator + "a.txt");
-        if (!file.exists()) {
-            try {
-                file.createNewFile();
-            }
-            catch (IOException e) {
-                e.printStackTrace();
-            }
-        }
-        System.out.println("文件绝对路径：" + file.getAbsolutePath());
-        long lastModified = file.lastModified();
-        DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        String lastTime = df.format(new Date(lastModified));
-        System.out.println("最后修改时间：" + lastTime);
-        System.out.println("文件长度：" + file.length());
-        System.out.println("是否为目录：" + file.isDirectory());
+	public static void main(String[] args) {
+		fileInfo();
+		filePath();
+	}
 
-        File file2 = new File("c:\\test");
-        if (!file2.exists()) {
-            file2.mkdir();
-        }
-        // file2.delete();
-        String[] names = file2.list();
-        for (String name : names) {
-            System.out.println(name);
-        }
+	public static void fileInfo() {
+		File file = new File(System.getProperty("user.dir") + "/coding.txt");
+		if (!file.exists()) {
+			try {
+				file.createNewFile();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		System.out.println("文件绝对路径：" + file.getAbsolutePath());
+		long lastModified = file.lastModified();
+		DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		String lastTime = df.format(new Date(lastModified));
+		System.out.println("最后修改时间：" + lastTime);
+		System.out.println("文件长度：" + file.length());
+		System.out.println("是否为目录：" + file.isDirectory());
+	}
 
-        File[] files = file2.listFiles();
-        for (File f : files) {
-            System.out.println(f.getPath() + "--" + f.length());
-        }
+	public static void filePath() {
+		File file = new File(System.getProperty("user.dir"));
+		if (!file.exists()) {
+			file.mkdir();
+		}
+		// file.delete();
+		String[] names = file.list();
+		for (String name : names) {
+			System.out.println("目录下文件名称: " + name);
+		}
 
-        findFile(new File("c:\\test"), ".txt");
-    }
+		File[] files = file.listFiles();
+		for (File f : files) {
+			System.out.println("目录下文件路径: " + f.getPath() + "--大小: " + f.length());
+		}
 
-    /**
-     *
-     * @param target 目标文件夹
-     * @param ext 扩展名
-     */
-    public static void findFile(File target, String ext) {
-        if (target != null) {
-            if (target.isDirectory()) {
-                File[] files = target.listFiles();
-                if (files != null) {
-                    for (File f : files) {
-                        findFile(f, ext);
-                    }
-                }
-            }
-            else {
-                String path = target.getAbsolutePath();
-                if (path.endsWith(ext)) {
-                    System.out.println(path);
-                }
-            }
-        }
-    }
+		findFile(new File(System.getProperty("user.dir")), ".txt");
+	}
+
+	/**
+	 *
+	 * @param target 目标文件夹
+	 * @param ext    扩展名
+	 */
+	public static void findFile(File target, String ext) {
+		if (target != null) {
+			if (target.isDirectory()) {
+				File[] files = target.listFiles();
+				if (files != null) {
+					for (File f : files) {
+						findFile(f, ext);
+					}
+				}
+			} else {
+				String path = target.getAbsolutePath();
+				if (path.endsWith(ext)) {
+					System.out.println("目标文件路径: " + path);
+				}
+			}
+		}
+	}
 }

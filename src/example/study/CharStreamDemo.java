@@ -9,10 +9,6 @@ import java.io.Reader;
 import java.io.Writer;
 
 /**
- * Created by wuruixuan on 2018/1/18.
- */
-
-/**
  * 如果是文本类型，建议使用字符流
  * 如果是非文本类型（音频、视频），建议使用字节流
  */
@@ -24,7 +20,7 @@ public class CharStreamDemo {
     }
 
     public static void write() {
-        File file = new File("/Users/wuruixuan/Desktop/b.txt");
+        File file = new File(System.getProperty("user.dir") + "/coding.txt");
         try {
             Writer out = new FileWriter(file);
             String info = "coding lesson";
@@ -39,7 +35,7 @@ public class CharStreamDemo {
     }
 
     public static void read() {
-        File file = new File("/Users/wuruixuan/Desktop/b.txt");
+        File file = new File(System.getProperty("user.dir") + "/coding.txt");
         try {
             Reader in = new FileReader(file);
             char[] cs = new char[2];

@@ -4,22 +4,22 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by wuruixuan on 2018/1/3.
+ * ArrayList
  */
 
 public class ListDemo {
     public static void main(String[] args) {
-
+    	arrayList();
     }
 
-    public void arrayList() {
-        List list = new ArrayList();
+    public static void arrayList() {
+        List<Integer> list = new ArrayList<>();
         list.add(10);
         list.add(20);
         list.add(30);
-        System.out.println(list.size());
+        System.out.println("size: " + list.size());
 
         int item0 = (int) list.get(0);
-
+        System.out.println("item0: " + item0);
     }
 }

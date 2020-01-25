@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * Created by wuruixuan on 2018/1/1.
+ * 日期时间
  */
 
 public class DateDemo {
@@ -20,13 +20,21 @@ public class DateDemo {
         int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int minute = calendar.get(Calendar.MINUTE);
         int second = calendar.get(Calendar.MILLISECOND);
+        System.out.println("year: " + year);
+        System.out.println("month: " + month);
+        System.out.println("day: " + day);
+        System.out.println("week: " + week);
+        System.out.println("hour: " + hour);
+        System.out.println("minute: " + minute);
+        System.out.println("second: " + second);
 
         Date now = new Date();
         DateFormat dateFormat = new SimpleDateFormat("yyyy年MM月dd日 HH:mm:ss SSS");
         String nowDate = dateFormat.format(now);
-        System.out.println(nowDate);
+        System.out.println("nowDate: " + nowDate);
 
         long timestamp = System.currentTimeMillis();// 当前时间（毫秒）
+        System.out.println("timestamp: " + timestamp);
     }
 }
 

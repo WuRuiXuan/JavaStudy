@@ -9,7 +9,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 
 /**
- * Created by wuruixuan on 2018/1/18.
+ * 字节流
  */
 
 public class ByteStreamDemo {
@@ -19,7 +19,7 @@ public class ByteStreamDemo {
     }
 
     public static void write() {
-        File file = new File("/Users/wuruixuan/Desktop/a.txt");
+        File file = new File(System.getProperty("user.dir") + "/coding.txt");
         try {
             OutputStream out = new FileOutputStream(file);
             String info = "coding lesson";
@@ -35,7 +35,7 @@ public class ByteStreamDemo {
     }
 
     public static void read() {
-        File file = new File("/Users/wuruixuan/Desktop/a.txt");
+        File file = new File(System.getProperty("user.dir") + "/coding.txt");
         try {
             InputStream in = new FileInputStream(file);
             byte[] bytes = new byte[1024*1024*10]; // 每次读取10MB

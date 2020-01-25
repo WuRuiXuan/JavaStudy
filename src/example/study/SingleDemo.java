@@ -1,10 +1,10 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/26.
+ * 单例模式
  */
 
-public class Single {
+public class SingleDemo {
     public static void main(String[] args) {
         SingleClass s = SingleClass.getInstance();
         s.method();
@@ -17,5 +17,7 @@ class SingleClass {
     public static SingleClass getInstance() {
         return singleClass;
     }
-    public void method() {};
+    public void method() {
+    	System.out.println("单例私有方法");
+    };
 }

@@ -1,10 +1,10 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/26.
+ * 适配器模式
  */
 
-public class Adapter {
+public class AdapterDemo {
     public static void main(String[] args) {
         PowerA a = new PowerImpA();
         input(a);

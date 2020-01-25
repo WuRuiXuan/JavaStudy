@@ -1,7 +1,7 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2018/1/2.
+ * 二叉树数据结构
  */
 
 public class BinaryTreeDemo {

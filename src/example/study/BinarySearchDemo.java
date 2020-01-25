@@ -3,7 +3,7 @@ package example.study;
 import java.util.Arrays;
 
 /**
- * Created by wuruixuan on 2017/12/29.
+ * 二分查找算法
  */
 
 public class BinarySearchDemo {
@@ -12,6 +12,7 @@ public class BinarySearchDemo {
         Arrays.sort(nums);
 //        int index = Arrays.binarySearch(nums, 30);
         int index = binarySearch(nums, 30);
+        System.out.println("index = " + index);
     }
 
     public static int binarySearch(int[] nums, int key) {

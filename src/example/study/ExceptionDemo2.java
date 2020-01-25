@@ -1,14 +1,14 @@
 package example.study;
 
 /**
- * Created by wuruixuan on 2017/12/27.
+ * 自定义异常
  */
 
 public class ExceptionDemo2 {
     public static void main(String[] args) {
         try {
             boolean b = login("abc", "123");
-
+            System.out.println("login: " + b);
         }
         catch (MyException e) {
             e.printStackTrace();
@@ -28,7 +28,9 @@ public class ExceptionDemo2 {
 }
 
 class MyException extends Exception {
-    private String message;
+	private static final long serialVersionUID = 1L;
+	private String message;
+	
     public MyException(String message) {
         super(message);
         this.message = message;

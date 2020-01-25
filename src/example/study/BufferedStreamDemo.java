@@ -15,7 +15,10 @@ import java.io.OutputStream;
 import java.io.Reader;
 import java.io.Writer;
 
-// 缓冲流
+/**
+ * 缓冲流
+ */
+
 public class BufferedStreamDemo {
 
 	public static void main(String[] args) {
@@ -29,7 +32,7 @@ public class BufferedStreamDemo {
 	
 	public static void byteStreamOut() {
 		try {
-			OutputStream out = new FileOutputStream("/Users/wuruixuan/Desktop/coding.txt");
+			OutputStream out = new FileOutputStream(System.getProperty("user.dir") + "/coding.txt");
 			BufferedOutputStream bos = new BufferedOutputStream(out);
 			// 缓存在内存中
 			bos.write("让编程更简单".getBytes());
@@ -47,7 +50,7 @@ public class BufferedStreamDemo {
 	
 	public static void byteStreamIn() {
 		try {
-			InputStream in = new FileInputStream("/Users/wuruixuan/Desktop/coding.txt");
+			InputStream in = new FileInputStream(System.getProperty("user.dir") + "/coding.txt");
 			BufferedInputStream bis = new BufferedInputStream(in);
 			byte[] bytes = new byte[1024];
 			int len = -1;
@@ -67,7 +70,7 @@ public class BufferedStreamDemo {
 	
 	public static void charStreamOut() {
 		try {
-			Writer out = new FileWriter("/Users/wuruixuan/Desktop/coding.txt");
+			Writer out = new FileWriter(System.getProperty("user.dir") + "/coding.txt");
 			// 自带缓存功能
 			BufferedWriter bw = new BufferedWriter(out);
 			bw.write("让编程更简单");
@@ -81,7 +84,7 @@ public class BufferedStreamDemo {
 	
 	public static void charStreamIn() {
 		try {
-			Reader in = new FileReader("/Users/wuruixuan/Desktop/coding.txt");
+			Reader in = new FileReader(System.getProperty("user.dir") + "/coding.txt");
 			BufferedReader br = new BufferedReader(in);
 			String info = br.readLine();
 			br.close();
