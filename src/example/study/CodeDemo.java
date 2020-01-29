@@ -12,13 +12,13 @@ import java.io.UnsupportedEncodingException;
 
 public class CodeDemo {
 	public static void main(String[] args) {
-		String name = "Java从入门到放弃";
+		String info = "Java从入门到放弃";
 		try {
 			// 转换编码
-			String newName = new String(name.getBytes("GBK"), "iso-8859-1");
-			System.out.println(newName);
+			String newInfo = new String(info.getBytes("GBK"), "iso-8859-1");
+			System.out.println(newInfo);
 			// 还原
-			String str = new String(newName.getBytes("iso-8859-1"), "GBK");
+			String str = new String(newInfo.getBytes("iso-8859-1"), "GBK");
 			System.out.println(str);
 		} catch (UnsupportedEncodingException e) {
 			e.printStackTrace();
