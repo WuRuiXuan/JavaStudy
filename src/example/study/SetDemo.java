@@ -77,7 +77,7 @@ public class SetDemo {
 		System.out.println("----------------");
 	}
 	
-	static class Student {
+	public static class Student {
 		private String name;
 		private int age;
 		
