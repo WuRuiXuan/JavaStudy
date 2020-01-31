@@ -12,9 +12,9 @@ import java.util.TreeSet;
 
 public class SetDemo {
 	public static void main(String[] args) {
-//		hashSet();
+		hashSet();
 //		treeSet();
-		linkedHashSet();
+//		linkedHashSet();
 	}
 	
 	// 先计算hashCode，再通过equals方法判断是否重复，遍历顺序可能会变
@@ -39,6 +39,15 @@ public class SetDemo {
 			System.out.println(student.toString());
 		}
 		System.out.println("----------------");
+		
+		System.out.println("size: " + set2.size());
+		System.out.println("remove: " + set2.remove(s1));
+		System.out.println("size: " + set2.size());
+		// 改变年龄后，hashCode改变，无法找到该对象
+		s2.setAge(4);
+		
+		System.out.println("remove: " + set2.remove(s2));
+		System.out.println("size: " + set2.size());
 	}
 	
 	// 通过compareTo方法判断是否重复，元素需实现Comparable接口

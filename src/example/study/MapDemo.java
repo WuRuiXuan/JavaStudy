@@ -2,8 +2,12 @@ package example.study;
 
 import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 import java.util.TreeMap;
+
+import example.study.SetDemo.Cat;
 
 /**
  * Map
@@ -17,6 +21,7 @@ import java.util.TreeMap;
 public class MapDemo {
 	public static void main(String[] args) {
 		hashMap();
+		iterator();
 	}
 	
 	// 异步，线程不安全，效率高，初始容量为16，每次扩充2倍
@@ -35,6 +40,7 @@ public class MapDemo {
 		System.out.println("\n");
 		
 		System.out.println("containsKey: " + map.containsKey("1"));
+		System.out.println("\n");
 	}
 	
 	// 同步，线程安全，效率低，初始容量为11，每次扩充2倍+1
@@ -46,6 +52,22 @@ public class MapDemo {
 	// 二叉树数据结构的实现（红黑树--平衡二叉树），存的对象需实现Comparable接口
 	public static void treeMap() {
 		TreeMap<String, Cat> map = new TreeMap<>();
-		map.put("1", new Cat("tom", 18));
+		map.put("1", new Cat("tom", 2));
+	}
+	
+	// 迭代
+	public static void iterator() {
+		HashMap<String, Cat> map = new HashMap<>();
+		map.put("jack", new Cat("jack", 2));
+		map.put("mimi", new Cat("mimi", 3));
+		map.put("miaomiao", new Cat("miaomiao", 5));
+		
+		Set<String> set = map.keySet();
+		Iterator<String> iter = set.iterator();
+		while (iter.hasNext()) {
+			String key = (String) iter.next();
+			Cat cat = map.get(key);
+			System.out.println(key + "-->" + cat.toString());
+		}
 	}
 }
