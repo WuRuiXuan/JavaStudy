@@ -33,12 +33,12 @@ public class ThreadDemo {
 	
 	public static void join(Thread t1) {
 		for (int i = 0; i < 10; i++) {
+			System.out.println(Thread.currentThread().getName() + "-" + i);
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e1) {
 				e1.printStackTrace();
 			}
-			System.out.println(Thread.currentThread().getName() + "-" + i);
 			if (i == 6) {
 				try {
 					// 等待t1线程执行完再继续执行
@@ -52,12 +52,12 @@ public class ThreadDemo {
 	
 	public static void yield(Thread t1) {
 		for (int i = 0; i < 10; i++) {
+			System.out.println(Thread.currentThread().getName() + "-" + i);
 			try {
 				Thread.sleep(500);
 			} catch (InterruptedException e1) {
 				e1.printStackTrace();
 			}
-			System.out.println(Thread.currentThread().getName() + "-" + i);
 			if (i == 6) {
 				// 让出当次CPU的执行时间
 				Thread.yield();
@@ -78,6 +78,7 @@ public class ThreadDemo {
 		public void run() {
 			// 在此方法中编写线程要执行的工作
 			for (int i = 0; i < 10; i++) {
+				System.out.println(Thread.currentThread().getName() + "-" + System.currentTimeMillis() + "-" + i);
 				try {
 					// 在指定的毫秒数内让当前正在执行的线程休眠（暂停执行）
 					// 此操作受系统计时器和调度程序精度和准确性影响。该线程不丢失任何监视器的所属权。
@@ -85,7 +86,6 @@ public class ThreadDemo {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println(Thread.currentThread().getName() + "-" + System.currentTimeMillis() + "-" + i);
 			}
 		}
 	}
@@ -95,12 +95,12 @@ public class ThreadDemo {
 		@Override
 		public void run() {
 			for (int i = 0; i < 10; i++) {
+				System.out.println(Thread.currentThread().getName() + "-" + System.currentTimeMillis() + "-" + i);
 				try {
 					Thread.sleep(500);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println(Thread.currentThread().getName() + "-" + System.currentTimeMillis() + "-" + i);
 			}
 		}
 	}
