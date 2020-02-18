@@ -31,7 +31,7 @@ public class EchoClientDemo {
 			Scanner input = new Scanner(System.in);
 			while (flag) {
 				System.out.println("请输入：");
-				String info = input.next();
+				String info = input.nextLine();
 				if (info.equals("bye")) {
 					flag = false;
 					break;
