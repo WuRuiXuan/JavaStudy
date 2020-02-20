@@ -1,4 +1,4 @@
-package example.study.echo;
+package example.study.tcp;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -6,6 +6,10 @@ import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
+
+/**
+ * 客户端之间通信
+ */
 
 public class CommunicateClientDemo {
 

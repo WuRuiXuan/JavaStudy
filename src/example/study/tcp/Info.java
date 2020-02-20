@@ -1,4 +1,4 @@
-package example.study.echo;
+package example.study.tcp;
 
 import java.io.Serializable;
 

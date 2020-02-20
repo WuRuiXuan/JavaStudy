@@ -1,4 +1,4 @@
-package example.study.echo;
+package example.study.tcp;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -8,6 +8,10 @@ import java.net.Socket;
 import java.util.Vector;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
+
+/**
+ * 转发通信消息给指定客户端
+ */
 
 public class CommunicateServerDemo {
 
