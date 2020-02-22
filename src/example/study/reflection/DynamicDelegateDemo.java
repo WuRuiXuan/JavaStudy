@@ -4,6 +4,10 @@ import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
+/**
+ * 动态代理模式
+ */
+
 public class DynamicDelegateDemo {
 
 	public static void main(String[] args) {

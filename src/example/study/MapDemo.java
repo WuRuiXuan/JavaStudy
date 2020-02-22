@@ -6,6 +6,7 @@ import java.util.Iterator;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
+import java.util.Map.Entry;
 
 import example.study.SetDemo.Cat;
 
@@ -62,12 +63,23 @@ public class MapDemo {
 		map.put("mimi", new Cat("mimi", 3));
 		map.put("miaomiao", new Cat("miaomiao", 5));
 		
+		// 方式1
 		Set<String> set = map.keySet();
 		Iterator<String> iter = set.iterator();
 		while (iter.hasNext()) {
 			String key = (String) iter.next();
 			Cat cat = map.get(key);
 			System.out.println(key + "-->" + cat.toString());
+		}
+		
+		System.out.println();
+		
+		// 方式2
+		Set<Entry<String, Cat>> set2 = map.entrySet();
+		Iterator<Entry<String, Cat>> iter2 = set2.iterator();
+		while (iter2.hasNext()) {
+			Entry<String, Cat> entry = iter2.next();
+			System.out.println(entry.getKey() + "->" + entry.getValue());
 		}
 	}
 }
