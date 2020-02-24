@@ -1,5 +1,5 @@
 # JavaStudy Index
-单例模式 - SingleDemo
+单例模式 - SingleDemo \n
 简单工厂模式 - FactoryDemo
 静态代理模式 - DelegateDemo
 适配器模式 - AdapterDemo
