@@ -12,7 +12,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 多客户端的服务器端
+ * Socket多客户端的服务器端
  */
 
 public class MutipleServerDemo {

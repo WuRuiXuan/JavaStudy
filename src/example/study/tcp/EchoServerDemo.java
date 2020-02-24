@@ -10,7 +10,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 
 /**
- * 服务器端
+ * Socket服务器端
  */
 
 public class EchoServerDemo {

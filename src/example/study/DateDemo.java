@@ -6,7 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 /**
- * 日期时间
+ * 日期时间类
  */
 
 public class DateDemo {

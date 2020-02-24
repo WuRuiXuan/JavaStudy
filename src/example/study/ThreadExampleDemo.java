@@ -1,7 +1,7 @@
 package example.study;
 
 /**
- * 生产者与消费者案例
+ * 多线程生产者与消费者案例
  */
 
 public class ThreadExampleDemo {

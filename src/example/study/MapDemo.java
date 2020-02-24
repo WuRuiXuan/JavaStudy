@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import example.study.SetDemo.Cat;
 
 /**
- * Map
+ * Map类
  * 操作两个对象的集合（键值对）
  * HashMap
  * 1. 使用Hash表（数组+链表）实现，键不能重复，如果相同就会覆盖原来的对象

@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 /**
- * 客户端
+ * Socket客户端
  */
 
 public class EchoClientDemo {

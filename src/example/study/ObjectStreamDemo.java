@@ -11,10 +11,10 @@ import java.io.OutputStream;
 import java.io.Serializable;
 
 /**
- * 对象序列化
+ * 对象流
  */
 
-public class SerializeDemo {
+public class ObjectStreamDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

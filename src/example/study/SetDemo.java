@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * Set
+ * Set类
  * 不包含重复元素的Collection
  */
 

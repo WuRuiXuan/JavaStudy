@@ -10,7 +10,7 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * 转发通信消息给指定客户端
+ * Socket服务器端转发通信消息给指定客户端
  */
 
 public class CommunicateServerDemo {

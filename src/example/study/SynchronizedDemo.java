@@ -3,7 +3,10 @@ package example.study;
 import java.util.concurrent.locks.ReentrantLock;
 
 /**
- * 线程同步 1. 同步代码块 2. 同步方法 3. Lock 同步会牺牲性能来换取安全
+ * 线程同步
+ * 1. 同步代码块 
+ * 2. 同步方法 
+ * 3. Lock 同步会牺牲性能来换取安全
  */
 
 public class SynchronizedDemo {

@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 import java.net.SocketException;
 
 /**
- * 接收端
+ * UDP接收端
  */
 
 public class UDPClientDemo {

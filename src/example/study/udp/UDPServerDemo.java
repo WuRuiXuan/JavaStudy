@@ -8,7 +8,7 @@ import java.net.SocketException;
 import java.net.UnknownHostException;
 
 /**
- * 发送端
+ * UDP发送端
  */
 
 public class UDPServerDemo {

@@ -8,7 +8,7 @@ import java.net.UnknownHostException;
 import java.util.Scanner;
 
 /**
- * 客户端之间通信
+ * Socket客户端之间通信
  */
 
 public class CommunicateClientDemo {

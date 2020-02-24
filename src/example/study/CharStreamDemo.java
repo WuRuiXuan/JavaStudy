@@ -9,6 +9,7 @@ import java.io.Reader;
 import java.io.Writer;
 
 /**
+ * 字符流
  * 如果是文本类型，建议使用字符流
  * 如果是非文本类型（音频、视频），建议使用字节流
  */
