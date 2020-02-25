@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<study>
+	<person id="1">
+		<name>小若</name>
+		<age>18</age>
+		<sex>女</sex>
+		<tel>13895274443</tel>
+	</person>
+	<person id="2">
+		<name>大黄</name>
+		<age>20</age>
+		<sex>男</sex>
+		<tel>13895274334</tel>
+	</person>
+</study>
