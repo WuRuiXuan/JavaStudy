@@ -2,5 +2,9 @@
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="libs/jdom-2.0.6.jar"/>
+	<classpathentry kind="lib" path="libs/dom4j-2.0.2.jar"/>
+	<classpathentry kind="lib" path="libs/xstream-1.4.11.1.jar"/>
+	<classpathentry kind="lib" path="libs/xpp3_min-1.1.4c.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
