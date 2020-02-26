@@ -54,12 +54,12 @@ UDP发送端 - udp/UDPServerDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
 注解 - AnnotationDemo <br/>
-XML:DOM解析 - xml/DomDemo <br/>
-XML:JDOM解析 - xml/JDomDemo <br/>
-XML:SAX解析 - xml/SaxDemo <br/>
-XML:DOM4J解析 - xml/Dom4jDemo <br/>
-XML:序列化与反序列化 - xml/XMLCoderDemo <br/>
-XML:XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
+[XML]DOM解析 - xml/DomDemo <br/>
+[XML]JDOM解析 - xml/JDomDemo <br/>
+[XML]SAX解析 - xml/SaxDemo <br/>
+[XML]DOM4J解析 - xml/Dom4jDemo <br/>
+[XML]序列化与反序列化 - xml/XMLCoderDemo <br/>
+[XML]XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
 
 
 
