@@ -54,12 +54,22 @@ UDP发送端 - udp/UDPServerDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
 注解 - AnnotationDemo <br/>
+[XML]DOM解析 - xml/DomDemo <br/>
+[XML]JDOM解析 - xml/JDomDemo <br/>
+[XML]SAX解析 - xml/SaxDemo <br/>
+[XML]DOM4J解析 - xml/Dom4jDemo <br/>
+[XML]序列化与反序列化 - xml/XMLCoderDemo <br/>
+[XML]XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
 
 
 
-
-
-
+# 项目运行说明
+1. 安装JDK
+2. 配置系统环境变量
+3. 安装eclipse，用eclipse打开项目目录
+4. 设置eclipse打开文件的编码：Window -> Preferences -> General -> Workspace -> Text file encoding -> Other -> UTF-8
+5. 设置eclipse字体脚本：Window -> Preferences -> General -> Appearance -> Colors and Fonts -> Basic -> Text Font -> Edit -> 脚本 -> 中欧字符
+6. 运行：选择任意Demo -> 鼠标右键 -> Run As -> Java Application
 
 
 
