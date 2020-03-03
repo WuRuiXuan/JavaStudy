@@ -60,6 +60,11 @@ UDP发送端 - udp/UDPServerDemo <br/>
 [XML]DOM4J解析 - xml/Dom4jDemo <br/>
 [XML]序列化与反序列化 - xml/XMLCoderDemo <br/>
 [XML]XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
+JDBC - jdbc/JDBCDemo <br/>
+封装JDBC工具类 - jdbc/MyDbUtils <br/>
+DAO设计模式 - jdbc/DaoDemo <br/>
+调用存储过程 - jdbc/ProcedureDemo <br/>
+开源工具DbUtils - jdbc/DbUtilsDemo <br/>
 
 
 

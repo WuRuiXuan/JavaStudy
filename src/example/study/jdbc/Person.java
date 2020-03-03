@@ -9,6 +9,14 @@ public class Person {
 	public Person() {
 	}
 	
+	public Person(int id, String name, int age, String description) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.age = age;
+		this.description = description;
+	}
+	
 	public Person(String name, int age, String description) {
 		super();
 		this.name = name;
