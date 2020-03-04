@@ -69,15 +69,26 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 
 
 # 项目运行说明
-1. 安装JDK
-2. 配置系统环境变量
-3. 安装eclipse（for Java Developers），用eclipse打开项目目录
-4. 设置eclipse打开文件的编码：Window -> Preferences -> General -> Workspace -> Text file encoding -> Other -> UTF-8
-5. 设置eclipse字体脚本：Window -> Preferences -> General -> Appearance -> Colors and Fonts -> Basic -> Text Font -> Edit -> 脚本 -> 中欧字符
-6. 运行：选择任意Demo -> 鼠标右键 -> Run As -> Java Application
+1. 用eclipse（for Java Developers）打开项目目录
+2. 设置eclipse打开文件的编码：Window -> Preferences -> General -> Workspace -> Text file encoding -> Other -> UTF-8
+3. 设置eclipse字体脚本：Window -> Preferences -> General -> Appearance -> Colors and Fonts -> Basic -> Text Font -> Edit -> 脚本 -> 中欧字符
+4. 运行：选择任意Demo -> 鼠标右键 -> Run As -> Java Application
+
+
+
+# 安装JDK
+1. 下载地址：https://www.oracle.com/cn/java/technologies/javase-jdk8-downloads.html
+2. 选择文件：jdk-8u181-windows-i586.exe
+3. 配置系统环境变量，运行dos命令javac检查是否配置正确
+
+
+
+# 安装eclipse(for Java Developers)
+1. 下载地址：https://www.eclipse.org/downloads/packages/release/2018-09/r
+2. 选择文件：Eclipse IDE for Java Developers
 
 
 
 # 安装MySQL
-下载地址：https://dev.mysql.com/downloads/windows/installer/8.0.html <br/>
-选择文件：Windows (x86, 32-bit), MSI Installer <br/>
+1. 下载地址：https://dev.mysql.com/downloads/windows/installer/8.0.html <br/>
+2. 选择文件：Windows (x86, 32-bit), MSI Installer <br/>
