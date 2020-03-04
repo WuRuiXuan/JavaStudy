@@ -69,7 +69,7 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 
 
 # 项目运行说明
-1. 用eclipse（for Java Developers）打开项目目录
+1. 用eclipse(for Java Developers)打开项目目录
 2. 设置eclipse打开文件的编码：Window -> Preferences -> General -> Workspace -> Text file encoding -> Other -> UTF-8
 3. 设置eclipse字体脚本：Window -> Preferences -> General -> Appearance -> Colors and Fonts -> Basic -> Text Font -> Edit -> 脚本 -> 中欧字符
 4. 运行：选择任意Demo -> 鼠标右键 -> Run As -> Java Application
