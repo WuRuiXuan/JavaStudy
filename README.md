@@ -71,11 +71,13 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 # 项目运行说明
 1. 安装JDK
 2. 配置系统环境变量
-3. 安装eclipse，用eclipse打开项目目录
+3. 安装eclipse（for Java Developers），用eclipse打开项目目录
 4. 设置eclipse打开文件的编码：Window -> Preferences -> General -> Workspace -> Text file encoding -> Other -> UTF-8
 5. 设置eclipse字体脚本：Window -> Preferences -> General -> Appearance -> Colors and Fonts -> Basic -> Text Font -> Edit -> 脚本 -> 中欧字符
 6. 运行：选择任意Demo -> 鼠标右键 -> Run As -> Java Application
 
 
 
-
+# 安装MySQL
+下载地址：https://dev.mysql.com/downloads/windows/installer/8.0.html <br/>
+选择文件：Windows (x86, 32-bit), MSI Installer <br/>
