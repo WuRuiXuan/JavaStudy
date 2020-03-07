@@ -1,4 +1,5 @@
 # JavaStudy Index
+## 基本
 单例模式 - SingleDemo <br/>
 简单工厂模式 - FactoryDemo <br/>
 静态代理模式 - DelegateDemo <br/>
@@ -40,13 +41,6 @@ Map类 - MapDemo <br/>
 中断线程 - InterruptThreadDemo <br/>
 多线程生产者与消费者案例 - ThreadExampleDemo <br/>
 线程池 - ExecutorDemo <br/>
-Socket客户端 - tcp/EchoClientDemo <br/>
-Socket服务器端 - tcp/EchoServerDemo <br/>
-Socket多客户端的服务器端 - tcp/MutipleServerDemo <br/>
-Socket客户端之间通信 - tcp/CommunicateClientDemo <br/>
-Socket服务器端转发通信消息给指定客户端 - tcp/CommunicateServerDemo <br/>
-UDP接收端 - udp/UDPClientDemo <br/>
-UDP发送端 - udp/UDPServerDemo <br/>
 反射 - reflection/ReflectionDemo <br/>
 动态代理模式 - reflection/DynamicDelegateDemo <br/>
 内省 - IntrospectorDemo <br/>
@@ -54,12 +48,23 @@ UDP发送端 - udp/UDPServerDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
 注解 - AnnotationDemo <br/>
-[XML]DOM解析 - xml/DomDemo <br/>
-[XML]JDOM解析 - xml/JDomDemo <br/>
-[XML]SAX解析 - xml/SaxDemo <br/>
-[XML]DOM4J解析 - xml/Dom4jDemo <br/>
-[XML]序列化与反序列化 - xml/XMLCoderDemo <br/>
-[XML]XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
+## TCP
+Socket客户端 - tcp/EchoClientDemo <br/>
+Socket服务器端 - tcp/EchoServerDemo <br/>
+Socket多客户端的服务器端 - tcp/MutipleServerDemo <br/>
+Socket客户端之间通信 - tcp/CommunicateClientDemo <br/>
+Socket服务器端转发通信消息给指定客户端 - tcp/CommunicateServerDemo <br/>
+## UDP
+UDP接收端 - udp/UDPClientDemo <br/>
+UDP发送端 - udp/UDPServerDemo <br/>
+## XML
+DOM解析 - xml/DomDemo <br/>
+JDOM解析 - xml/JDomDemo <br/>
+SAX解析 - xml/SaxDemo <br/>
+DOM4J解析 - xml/Dom4jDemo <br/>
+序列化与反序列化 - xml/XMLCoderDemo <br/>
+XStream序列化/反序列化工具 - xml/XStreamDemo <br/>
+## JDBC
 JDBC - jdbc/JDBCDemo <br/>
 封装JDBC工具类 - jdbc/MyDbUtils <br/>
 DAO设计模式 - jdbc/DaoDemo <br/>
