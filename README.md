@@ -35,12 +35,6 @@ Set类 - SetDemo <br/>
 Collection迭代 - CollectionDemo <br/>
 堆栈队列 - StackQueueDemo <br/>
 Map类 - MapDemo <br/>
-多线程 - ThreadDemo <br/>
-线程同步 - SynchronizedDemo <br/>
-死锁 - DeadThreadDemo <br/>
-中断线程 - InterruptThreadDemo <br/>
-多线程生产者与消费者案例 - ThreadExampleDemo <br/>
-线程池 - ExecutorDemo <br/>
 反射 - reflection/ReflectionDemo <br/>
 动态代理模式 - reflection/DynamicDelegateDemo <br/>
 内省 - IntrospectorDemo <br/>
@@ -48,6 +42,13 @@ Map类 - MapDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
 注解 - AnnotationDemo <br/>
+## 多线程
+多线程 - ThreadDemo <br/>
+线程同步 - SynchronizedDemo <br/>
+死锁 - DeadThreadDemo <br/>
+中断线程 - InterruptThreadDemo <br/>
+多线程生产者与消费者案例 - ThreadExampleDemo <br/>
+线程池 - ExecutorDemo <br/>
 ## TCP
 Socket客户端 - tcp/EchoClientDemo <br/>
 Socket服务器端 - tcp/EchoServerDemo <br/>
