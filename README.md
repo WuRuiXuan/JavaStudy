@@ -15,21 +15,8 @@ Math、Random、Arrays工具类 - MathRandomArraysDemo <br/>
 对象比较器 - ComparableDemo <br/>
 对象的克隆 - CloneDemo <br/>
 二叉树数据结构 - BinaryTreeDemo <br/>
-文件操作 - FileDemo <br/>
-字节流 - ByteStreamDemo <br/>
-字符流 - CharStreamDemo <br/>
-文件复制 - CopyFileDemo <br/>
-转换流 - ChangeStreamDemo <br/>
-缓冲流 - BufferedStreamDemo <br/>
-打印流 - PrintStreamDemo <br/>
-对象流 - ObjectStreamDemo <br/>
-字节数组流 - ByteArrayStreamDemo <br/>
-数据流 - DataStreamDemo <br/>
-字符串流 - StringStreamDemo <br/>
-随机访问文件 - RandomAccessFileDemo <br/>
 装饰者模式 - decorator/DecoratorDemo <br/>
 常见字符编码 - CodeDemo <br/>
-NIO - NIODemo <br/>
 List类 - ListDemo <br/>
 Set类 - SetDemo <br/>
 Collection迭代 - CollectionDemo <br/>
@@ -42,13 +29,27 @@ Map类 - MapDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
 注解 - AnnotationDemo <br/>
+## 文件io
+文件操作 - io/FileDemo <br/>
+字节流 - io/ByteStreamDemo <br/>
+字符流 - io/CharStreamDemo <br/>
+文件复制 - io/CopyFileDemo <br/>
+转换流 - io/ChangeStreamDemo <br/>
+缓冲流 - io/BufferedStreamDemo <br/>
+打印流 - io/PrintStreamDemo <br/>
+对象流 - io/ObjectStreamDemo <br/>
+字节数组流 - io/ByteArrayStreamDemo <br/>
+数据流 - io/DataStreamDemo <br/>
+字符串流 - io/StringStreamDemo <br/>
+随机访问文件 - io/RandomAccessFileDemo <br/>
+NIO - io/NIODemo <br/>
 ## 多线程
-多线程 - ThreadDemo <br/>
-线程同步 - SynchronizedDemo <br/>
-死锁 - DeadThreadDemo <br/>
-中断线程 - InterruptThreadDemo <br/>
-多线程生产者与消费者案例 - ThreadExampleDemo <br/>
-线程池 - ExecutorDemo <br/>
+多线程 - thread/ThreadDemo <br/>
+线程同步 - thread/SynchronizedDemo <br/>
+死锁 - thread/DeadThreadDemo <br/>
+中断线程 - thread/InterruptThreadDemo <br/>
+多线程生产者与消费者案例 - thread/ThreadExampleDemo <br/>
+线程池 - thread/ExecutorDemo <br/>
 ## TCP
 Socket客户端 - tcp/EchoClientDemo <br/>
 Socket服务器端 - tcp/EchoServerDemo <br/>
