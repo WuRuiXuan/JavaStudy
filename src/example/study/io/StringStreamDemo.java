@@ -1,4 +1,4 @@
-package example.study;
+package example.study.io;
 
 import java.io.IOException;
 import java.io.Reader;

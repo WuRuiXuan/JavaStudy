@@ -1,4 +1,4 @@
-package example.study;
+package example.study.thread;
 
 /**
  * 中断线程：自定义标记

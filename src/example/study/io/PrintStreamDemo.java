@@ -1,4 +1,4 @@
-package example.study;
+package example.study.io;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedWriter;

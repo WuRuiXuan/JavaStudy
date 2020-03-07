@@ -1,4 +1,4 @@
-package example.study;
+package example.study.thread;
 
 /**
  * 多线程生产者与消费者案例

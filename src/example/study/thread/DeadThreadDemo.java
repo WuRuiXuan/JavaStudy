@@ -1,4 +1,4 @@
-package example.study;
+package example.study.thread;
 
 /**
  * 死锁
