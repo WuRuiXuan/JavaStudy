@@ -8,7 +8,7 @@ import java.util.List;
 import org.apache.poi.ss.usermodel.Workbook;
 
 // 示例程序入口类
-public class MainTest {
+public class ExcelDemo {
 
 	// 设定Excel文件所在路径
 	private static String excelFilePath = System.getProperty("user.dir") + "/readExample.xlsx";
