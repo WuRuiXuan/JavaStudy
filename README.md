@@ -75,7 +75,12 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 ## 四大引用
 软引用 - SoftReferenceDemo <br/>
 弱引用 - WeakReferenceDemo <br/>
-## 其它
+## 高级
+惰性初始化 - LazyHolderDemo <br/>
+双重检查锁 - DoubleCheckedLockingDemo <br/>
+happens-before - HappensBeforeDemo <br/>
+CAS乐观锁 - CASDemo <br/>
+## 工具
 执行DOS命令 - DosDemo <br/>
 读写Excel - ExcelDemo <br/>
 读取网络配置 - IPConfigDemo <br/>
