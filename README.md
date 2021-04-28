@@ -73,8 +73,10 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 调用存储过程 - jdbc/ProcedureDemo <br/>
 开源工具DbUtils - jdbc/DbUtilsDemo <br/>
 ## 四大引用
-软引用 - SoftReferenceDemo <br/>
-弱引用 - WeakReferenceDemo <br/>
+软引用 - reference/SoftReferenceDemo <br/>
+弱引用 - reference/WeakReferenceDemo <br/>
+虚引用 - reference/PhantomReferenceDemo <br/>
+终结器引用 - reference/FinalReferenceDemo <br/>
 ## 高级
 惰性初始化 - LazyHolderDemo <br/>
 双重检查锁 - DoubleCheckedLockingDemo <br/>
