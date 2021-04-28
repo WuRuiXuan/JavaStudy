@@ -72,7 +72,7 @@ JDBC - jdbc/JDBCDemo <br/>
 DAO设计模式 - jdbc/DaoDemo <br/>
 调用存储过程 - jdbc/ProcedureDemo <br/>
 开源工具DbUtils - jdbc/DbUtilsDemo <br/>
-## 四大引用
+## 四种引用
 软引用 - reference/SoftReferenceDemo <br/>
 弱引用 - reference/WeakReferenceDemo <br/>
 虚引用 - reference/PhantomReferenceDemo <br/>
