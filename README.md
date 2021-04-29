@@ -82,6 +82,8 @@ DAO设计模式 - jdbc/DaoDemo <br/>
 双重检查锁 - DoubleCheckedLockingDemo <br/>
 happens-before - HappensBeforeDemo <br/>
 CAS乐观锁 - CASDemo <br/>
+synchronized悲观锁 - SynchronizedDemo <br/>
+原子对象 - AtomicDemo <br/>
 ## 工具
 执行DOS命令 - DosDemo <br/>
 读写Excel - ExcelDemo <br/>
