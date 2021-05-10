@@ -24,7 +24,7 @@ Collection迭代 - CollectionDemo <br/>
 Map类 - MapDemo <br/>
 反射 - reflection/ReflectionDemo <br/>
 动态代理模式 - reflection/DynamicDelegateDemo <br/>
-内省 - IntrospectorDemo <br/>
+内省 - reflection/IntrospectorDemo <br/>
 泛型 - GenericDemo <br/>
 正则表达式 - RegexDemo <br/>
 枚举 - EnumDemo <br/>
