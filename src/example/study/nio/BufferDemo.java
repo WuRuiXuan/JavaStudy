@@ -1,5 +1,7 @@
 package example.study.nio;
 
+import org.junit.Test;
+
 import java.nio.ByteBuffer;
 
 /**
@@ -7,15 +9,10 @@ import java.nio.ByteBuffer;
  *
  */
 public class BufferDemo {
-
-	public static void main(String[] args) {
-//		testBuffer();
-//		testMark();
-		testDirect();
-	}
 	
 	// 缓冲区的四个核心属性
-	public static void testBuffer() {
+	@Test
+	public void testBuffer() {
 		String str = "abcde";
 		
 		// 分配一个指定大小的缓冲区
@@ -71,7 +68,8 @@ public class BufferDemo {
 	}
 	
 	// 标记
-	public static void testMark() {
+	@Test
+	public void testMark() {
 		String str = "abcde";
 		ByteBuffer buf = ByteBuffer.allocate(1024);
 		buf.put(str.getBytes());
@@ -101,7 +99,8 @@ public class BufferDemo {
 	}
 
 	// 直接缓冲区与非直接缓冲区
-	public static void testDirect() {
+	@Test
+	public void testDirect() {
 		ByteBuffer buf = ByteBuffer.allocateDirect(1024);
 		System.out.println(buf.isDirect());
 	}

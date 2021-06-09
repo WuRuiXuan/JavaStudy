@@ -1,5 +1,9 @@
 package example.study.nio;
 
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
+
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -12,6 +16,7 @@ import java.nio.channels.FileChannel.MapMode;
 import java.nio.charset.Charset;
 import java.nio.charset.CharsetDecoder;
 import java.nio.charset.CharsetEncoder;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Map;
@@ -24,23 +29,11 @@ import java.util.Set;
  */
 public class ChannelDemo {
 
-	public static void main(String[] args) throws IOException {
+	// 利用通道完成文件的复制（非直接缓冲区）
+	@Test
+	public void testFileCopyByChannel() {
 		long startTime = System.currentTimeMillis();
 
-//		testFileCopyByChannel();
-//		testFileCopyByDirect();
-//		testTransfer();
-//		testScatterAndGather();
-//		testAvailableCharsets();
-		testCharsetEncoderAndDecoder();
-
-		long endTime = System.currentTimeMillis();
-
-		System.out.println("耗费时间为：" + (endTime - startTime) + "毫秒");
-	}
-
-	// 利用通道完成文件的复制（非直接缓冲区）
-	public static void testFileCopyByChannel() {
 		FileInputStream fis = null;
 		FileOutputStream fos = null;
 		FileChannel inChannel = null;
@@ -98,10 +91,17 @@ public class ChannelDemo {
 				}
 			}
 		}
+
+		long endTime = System.currentTimeMillis();
+
+		System.out.println("耗费时间为：" + (endTime - startTime) + "毫秒");
 	}
 
 	// 利用直接缓冲区完成文件的复制（内存映射文件）
-	public static void testFileCopyByDirect() throws IOException {
+	@Test
+	public void testFileCopyByDirect() throws IOException {
+		long startTime = System.currentTimeMillis();
+
 		FileChannel inChannel = FileChannel.open(Paths.get(System.getProperty("user.dir") + "/coding.txt"),
 				StandardOpenOption.READ);
 		// StandardOpenOption.CREATE 无论文件是否存在，都重新创建
@@ -120,10 +120,17 @@ public class ChannelDemo {
 
 		inChannel.close();
 		outChannel.close();
+
+		long endTime = System.currentTimeMillis();
+
+		System.out.println("耗费时间为：" + (endTime - startTime) + "毫秒");
 	}
 
 	// 通道之间的数据传输（直接缓冲区）
-	public static void testTransfer() throws IOException {
+	@Test
+	public void testTransfer() throws IOException {
+		long startTime = System.currentTimeMillis();
+
 		FileChannel inChannel = FileChannel.open(Paths.get(System.getProperty("user.dir") + "/coding.txt"),
 				StandardOpenOption.READ);
 		FileChannel outChannel = FileChannel.open(Paths.get(System.getProperty("user.dir") + "/copied.txt"),
@@ -134,10 +141,15 @@ public class ChannelDemo {
 
 		inChannel.close();
 		outChannel.close();
+
+		long endTime = System.currentTimeMillis();
+
+		System.out.println("耗费时间为：" + (endTime - startTime) + "毫秒");
 	}
 
 	// 分散和聚集
-	public static void testScatterAndGather() throws IOException {
+	@Test
+	public void testScatterAndGather() throws IOException {
 		RandomAccessFile raf1 = new RandomAccessFile(System.getProperty("user.dir") + "/coding.txt", "rw");
 		// 获取通道
 		FileChannel channel1 = raf1.getChannel();
@@ -169,7 +181,8 @@ public class ChannelDemo {
 	}
 
 	// 获取支持的字符集
-	public static void testAvailableCharsets() {
+	@Test
+	public void testAvailableCharsets() {
 		Map<String, Charset> map = Charset.availableCharsets();
 		Set<Entry<String, Charset>> set = map.entrySet();
 		for (Entry<String, Charset> entry : set) {
@@ -178,7 +191,8 @@ public class ChannelDemo {
 	}
 
 	// 字符集编码器与解码器
-	public static void testCharsetEncoderAndDecoder() throws IOException {
+	@Test
+	public void testCharsetEncoderAndDecoder() throws IOException {
 		Charset cs1 = Charset.forName("GBK");
 
 		// 获取编码器
@@ -203,7 +217,7 @@ public class ChannelDemo {
 		CharBuffer cBuf2 = cd.decode(bBuf);
 		System.out.println("GBK decoding: " + cBuf2.toString());
 		
-		Charset cs2 = Charset.forName("UTF-8");
+		Charset cs2 = StandardCharsets.UTF_8;
 		bBuf.flip();
 		CharBuffer cBuf3 = cs2.decode(bBuf);
 		System.out.println("UTF-8 decoding: " + cBuf3.toString());
@@ -212,10 +226,10 @@ public class ChannelDemo {
 	/**
 	 * 得到一个字符串的字节长度
 	 * 
-	 * @param String s 需要得到长度的字符串
+	 * @param s 需要得到长度的字符串
 	 * @return int 得到的字符串长度
 	 */
-	public static int getLength(String s) {
+	public int getLength(String s) {
 		int valueLength = 0;
 		String chinese = "[\u4e00-\u9fa5]";
 		// 获取字段值的长度，如果含中文字符，则每个中文字符长度为2，否则为1
